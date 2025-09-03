@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagens Elegantes de Leticia Nunes - Inspiração Feminina</title>
+    <meta name="description" content="Viagens Elegantes de Leticia Nunes: blog, dicas e eBooks para mulheres viajantes. Inspiração, segurança e rotas pela Turquia e além.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'turkish-red': '#C8102E',
+                        'beige': '#F5F5DC',
+                        'white': '#FFFFFF',
+                        'gold': '#F4B942',
+                        'deep-blue': '#023047'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-beige via-white to-turkish-red text-deep-blue">
+    <nav class="bg-turkish-red shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-white">Viagens Elegantes</h1>
+                </div>
+                <ul class="flex space-x-8 items-center text-white">
+                    <li><a href="#home" class="hover:text-beige transition">Home</a></li>
+                    <li><a href="#blog" class="hover:text-beige transition">Blog</a></li>
+                    <li><a href="#shop" class="hover:text-beige transition">Loja</a></li>
+                    <li><a href="#communities" class="hover:text-beige transition">Comunidades</a></li>
+                    <li><a href="#about" class="hover:text-beige transition">Sobre</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3cb1a6a1-c66a-4164-bb1d-40dfe94eb4ce.png');">
+        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+        <div class="relative text-center px-4">
+            <h2 class="text-5xl md:text-7xl font-bold mb-4 text-white">Viaje Como Uma Deusa</h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-beige">Compartilhe minhas experiências e inspire outras mulheres a explorarem o mundo.</p>
+            <a href="#blog" class="bg-turkish-red hover:bg-gold text-white px-6 py-3 rounded-full text-lg font-semibold transition">Explorar Posts</a>
+        </div>
+    </section>
+    <footer class="bg-turkish-red py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <p>&copy; 2025 Viagens Elegantes. Contate-me para colaborações.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-beige transition">Instagram</a>
+                <a href="#" class="hover:text-beige transition">Facebook</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', () => alert('Integrar com plataforma de pagamento como Stripe em breve!'));
+        });
+    </script>
+</body>
+</html>
